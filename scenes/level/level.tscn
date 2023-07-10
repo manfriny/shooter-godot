@@ -13,6 +13,8 @@ position = Vector2(619, -535)
 [node name="Player" parent="." instance=ExtResource("1_f0td3")]
 position = Vector2(548, 535)
 
+[node name="Projectiles" type="Node2D" parent="."]
+
 [connection signal="player_entered_gate" from="Gater" to="." method="_on_gater_player_entered_gate"]
 [connection signal="grenade" from="Player" to="." method="_on_player_grenade"]
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
