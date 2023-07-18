@@ -7,6 +7,7 @@
 radius = 53.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_mask = 31
 script = ExtResource("1_o883f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -18,10 +19,11 @@ texture = ExtResource("1_1ga8q")
 shape = SubResource("CircleShape2D_4kvuf")
 
 [node name="LaserReloadTimer" type="Timer" parent="."]
+wait_time = 0.5
 one_shot = true
 
 [node name="GrenadeReloadTimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 2.0
 one_shot = true
 
 [node name="LaserStartPosition" type="Node2D" parent="."]
