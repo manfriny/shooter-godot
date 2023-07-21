@@ -26,6 +26,7 @@ func _process(_delta):
 	
 	var player_direction = (get_global_mouse_position() - position).normalized()
 	if Input.is_action_pressed("primary_action") and can_laser:
+		$GPUParticles2D.emitting = true
 		var laser_markers = $LaserStartPosition.get_children()
 		var selected_marker = laser_markers[randi() % laser_markers.size()]
 		

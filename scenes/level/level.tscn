@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bfnikkuq30x43"]
+[gd_scene load_steps=12 format=3 uid="uid://bfnikkuq30x43"]
 
 [ext_resource type="PackedScene" uid="uid://cpj3finrrmjrd" path="res://scenes/objects/gater.tscn" id="1_5h74f"]
 [ext_resource type="PackedScene" uid="uid://dbet72h3iliir" path="res://scenes/player/player.tscn" id="1_f0td3"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dkhrj7ukm0c8q" path="res://resources/graphics/tilesets/outside_walls.png" id="3_4wvq1"]
 [ext_resource type="Texture2D" uid="uid://itosau3cjtxf" path="res://resources/graphics/tilesets/soil.png" id="4_jv25f"]
 [ext_resource type="PackedScene" uid="uid://brd36a4yd4jbl" path="res://scenes/houses/house.tscn" id="5_0uf2r"]
+[ext_resource type="PackedScene" uid="uid://s027l0xr2q5c" path="res://scenes/objects/steam_vent.tscn" id="6_f07vd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1qkdg"]
 resource_name = "Walls"
@@ -120,6 +121,9 @@ layer_1/tile_data = PackedInt32Array(-10, 0, 0, -4, 131072, 0, -5, 65536, 0, -6,
 position = Vector2(1246, 2756)
 rotation = 3.14159
 scale = Vector2(0.8, 0.8)
+
+[node name="SteamVent" parent="Ground" instance=ExtResource("6_f07vd")]
+position = Vector2(-198, 562)
 
 [node name="Gater" parent="." instance=ExtResource("1_5h74f")]
 position = Vector2(619, -535)
